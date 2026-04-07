@@ -79,7 +79,7 @@ const Register = () => {
       setSuccess("Account created successfully! Redirecting...");
       setTimeout(() => navigate("/"), 1200);
     } catch (err) {
-      const message = err.response?.data?.message || "Something went wrong. Please try again.";
+      const message = err.response?.data?.message;
       setError(message);
       console.error(err);
     } finally {
