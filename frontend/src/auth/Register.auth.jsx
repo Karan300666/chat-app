@@ -64,7 +64,7 @@ const Register = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/auth/user/signup",
+        "https://live-chat-app-0vfn.onrender.com/api/auth/user/signup",
         {
           userName,
           email,
