@@ -38,7 +38,7 @@ const Chat = () => {
 
   useEffect(() => {
     initializeSocket(location.state.project._id)
-    axios.get('http://localhost:3000/api/auth/user/all' , {
+    axios.get('https://live-chat-app-0vfn.onrender.com/api/auth/user/all' , {
         withCredentials: true
        }).then((res) => {
        
@@ -64,7 +64,7 @@ const Chat = () => {
   }
   
   async function addCollaborators(){
-    axios.put('http://localhost:3000/api/project/add-users' , {
+    axios.put('https://live-chat-app-0vfn.onrender.com//api/project/add-users' , {
       projectId : location.state.project._id ,
       users : Array.from(selectedUserIds)
     } ,{
@@ -105,7 +105,7 @@ useEffect(() => {
 function presentUsersInProject(){
   userPannelRef.current.style.left = "0%"
   
-  axios.get('http://localhost:3000/api/project/users-project', {
+  axios.get('https://live-chat-app-0vfn.onrender.com//api/project/users-project', {
            params: {
             projectId: location.state.project._id
          },
