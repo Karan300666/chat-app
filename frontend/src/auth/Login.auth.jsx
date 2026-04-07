@@ -14,7 +14,7 @@ const Login = () => {
   const navigate = useNavigate()
 
   useEffect(() => {
-    document.title = 'AI Chat | Login'
+    document.title = 'Login'
 
     if (user) {
       setSuccess(`Already signed in as ${user.userName || user.email}. Redirecting...`)
@@ -64,7 +64,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        'http://localhost:3000/api/auth/user/login',
+        'https://live-chat-app-0vfn.onrender.com/api/auth/user/login',
         { email, password },
         { withCredentials: true }
       )
