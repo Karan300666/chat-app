@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* Ensure no default body margin and full-height root to avoid extra scroll */
+html, body, #root {
+	height: 100%;
+		margin: 0;
+}
+.chat-box{
+	scrollbar-width: none; 
+}
+.addUserPannel{
+	scrollbar-width: none;
+}
