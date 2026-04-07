@@ -17,7 +17,7 @@ const server = createServer(app)
 
 
 const corsOptions = {
-  origin: 'http://localhost:5173', 
+  origin: 'https://chat-4fyz3txr8-karan300666s-projects.vercel.app', 
   credentials: true, 
 };
 
