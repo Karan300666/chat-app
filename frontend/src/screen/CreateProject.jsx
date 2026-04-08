@@ -16,7 +16,7 @@ const CreateProject = () => {
     const navigate = useNavigate()
 
     useEffect(() => {
-     axios.get('https://live-chat-app-0vfn.onrender.com//api/project/all' , {
+     axios.get('https://live-chat-app-0vfn.onrender.com/api/project/all' , {
         withCredentials: true
       }).then((res) => {
         setProjects(res.data.projects)
@@ -24,7 +24,7 @@ const CreateProject = () => {
    },[])
    async function createProject(){
 
-       axios.post('https://live-chat-app-0vfn.onrender.com//api/project/create' , {
+       axios.post('https://live-chat-app-0vfn.onrender.com/api/project/create' , {
         name: projectName
        } , {
         withCredentials: true
