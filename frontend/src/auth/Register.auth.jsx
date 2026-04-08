@@ -77,7 +77,7 @@ const Register = () => {
 
       setUser(response.data.user ?? null);
       setSuccess("Account created successfully! Redirecting...");
-      setTimeout(() => navigate("/"), 1200);
+      navigate("/");
     } catch (err) {
       const message = err.response?.data?.message;
       setError(message);
