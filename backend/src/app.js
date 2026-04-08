@@ -17,7 +17,7 @@ const server = createServer(app)
 
 
 const corsOptions = {
-  origin: 'https://chat-app-red-one-27.vercel.app/', 
+  origin: 'https://chat-app-red-one-27.vercel.app', 
   credentials: true, 
 };
 
