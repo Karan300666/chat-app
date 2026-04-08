@@ -16,7 +16,7 @@ const Register = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    document.title = "AI Chat | Sign up";
+    document.title = "Sign up";
 
     if (user) {
       navigate("/");
