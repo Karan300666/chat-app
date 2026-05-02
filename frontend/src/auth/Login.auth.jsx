@@ -71,7 +71,7 @@ const Login = () => {
 
       setUser(response.data.user)
       setSuccess('Login successful! Redirecting...')
-      navigate('https://chat-app-red-one-27.vercel.app/')
+      navigate('/')
     } catch (err) {
       const message = err.response?.data?.message || 'Unable to login. Please try again.'
       setError(message)
