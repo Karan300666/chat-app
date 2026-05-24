@@ -48,7 +48,7 @@ id : user._id,
 })
 
   res.cookie("token" , token, {
-         httpOnly: true.
+         httpOnly: true,
          secure: true,
          sameSite: 'none',
             
@@ -91,7 +91,7 @@ const token = jwt.sign({
      } , process.env.JWT_SECRET)
 
      res.cookie("token" , token, {
-         httpOnly: true.
+         httpOnly: true,
          secure: true,
          sameSite: 'none',
             
